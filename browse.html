@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE>Sample Lab Database Website</TITLE>
+	<link rel="stylesheet" type="text/css" href="browse.css"/>
+
+	 <script>  
+		function validateform(){  
+			var name = document.getElementById('text1').value;
+			//var lname = document.forms["myForm"]["lastname"];
+    		//var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    		//var agech = document.forms["myForm"]["age"];
+    		//var phonec = /^\+?([0-9]{2})$/;
+    		//var phonen = /^[1-9]{1}[0-9]{9}$/;
+    		//var password = document.forms["myForm"]["pass"];
+    		//var confpasswor = document.forms["myForm"]["conpass"];
+			
+	  		if (name=="")
+	  		{
+				window.alert("Search bar empty.");
+			    	name.focus(); 
+			    	return false;
+	    	}
+	    	else if(name == "C57" || name=="c57")
+	    	{
+	    		window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/C57.html");
+	    	}
+	    	else if(name == "heatmap" || name=="Heatmap")
+	    	{
+	    		window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/heatmap.html");
+	    	}
+	    	else if(name == "nmds" || name=="NMDS")
+	    	{
+	    		window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/meta_nmds.html");
+	    	}
+	    	else if(name == "rank3" || name=="Rank3")
+	    	{
+	    		window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/p_rank3.html");
+	    	}
+	    	else if(name=="CD1" || name=='cd1' || name=='Cd1' || name=='cD1')
+	    	{
+				window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/CD1.html");	    		
+	    	}
+	    	else if(name=="NS" || name=='ns' || name=='Ns' ||  name=='nS')
+	    	{
+				window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/NS.html");	    		
+	    	}
+	    	else if(name == "tryptophan" || name=="Tryptophan")
+	    	{
+	    		window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/metabox.html#16");
+	    	}
+	    	else if(name == "Hippurate" || name=="hippurate")
+	    	{
+	    		window.open("/Users/kaustubhpachpor/Desktop/Project/Webpage/metabox.html#10");
+	    	}
+
+	    	else
+	    	{
+	    		window.alert("No plots found for: "+name);
+	    		return false;
+	    	}
+	  		/*if(lname.value == "")
+	  		{
+	  			window.alert("Last Name must be filled.");
+	  			lname.focus();
+	  			return false;
+	  		}
+	  		if (!filter.test(email.value)) 
+	  		{
+		    		
+		    	alert('Invalid Email address.');
+			    email.focus();
+    			return false;
+    		}
+    		if (!phonec.test(phone.value)) 
+	  		{
+		    		
+		    	alert('Invalid country code');
+			    phone.focus();
+    			return false;
+    		}
+    		if(!phonen.test(phonev.value))
+    		{
+    			alert('Invalid Phone number');
+    			phonev.focus();
+    			return false;
+    		}
+    		if(agech.value=="")
+    		{
+    			window.alert("Please enter your Age.");
+    			agech.focus();
+    			return false;
+   			}
+   			if(document.myForm.gender[0].checked==false && document.myForm.gender[1].checked==false && document.myForm.gender[2].checked==false)
+    		{
+    			window.alert("Please select a gender.");
+    			return false;
+   			}
+   			if(password.value=="")
+   			{
+   				window.alert("Please enter a valid password");
+   				password.focus();
+   				return false;
+   			}
+   			if(confpasswor.value=="")
+   			{
+   				window.alert("Please confirm your password");
+   				confpasswor.focus();
+   				return false;
+   			}
+   			
+   			else
+   			{
+   				if(password.value!=confpasswor.value)
+   				{
+   					window.alert("Password did not match.");
+   					return false;
+  				}
+  			}
+  			*/
+		}  
+	</script> 
+</HEAD>
+<body>
+	<img id="logo" src="/Users/kaustubhpachpor/Desktop/1111.png">
+	<div class="heading">
+		<h1>Multi-omics Metabolic & Microbiome profiling of Mouse Pregnancy</h1>
+	</div>
+
+<div class="bar">
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="browse.html">Browse</a>
+			<a href="webpage.html">Plots</a>
+			<a href="layout.html">Website Layout</a>
+			<a href="search.html">Services</a>
+			<a href="">Contact</a>
+		
+	</div>  
+</div>
+
+
+<div class="signup">
+	
+
+	<font color="white" style=font-family:Times New Roman; size=3>
+		
+
+		<form name="myForm" onsubmit="return validateform()" method="post">
+
+			
+			<font color="white" style=font-family:Times New Roman; size=6>Enter a mouse strain name(e,g., C57, CD1, or NS) in the box below:</font>
+			<br><br>
+			<input id="text1" name="firstname" placeholder="Enter here" class="resizedTextbox">
+			<br><br>
+			<table>
+  				<tr>
+				    <th>Show results for the following databases:</th>
+				    <td></td>
+				    <td><input type="checkbox" name="intensity2" value="intens2"> Metabolic Health</td>
+				    <td></td>
+				    <td><input type="checkbox" name="mlratio" value="mlr"> Microbiome</td>
+				    <td></td>
+				    <td><input type="checkbox" name="reratio" value="rer"> Metabolome</td>			
+ 			    </tr>
+ 			</table>
+ 			<br>
+ 			<table>
+ 			    <tr>
+ 			    	<th>Graph Size:</th>
+ 			    	<td></td>
+ 			    	<td><input type="radio" name="gender" value="male"> small (400x300)</td>
+ 			    	<td></td>
+ 			    	<td><input type="radio" name="gender" value="male"> medium (600x400)</td>
+ 			    	<td></td>
+ 			    	<td><input type="radio" name="gender" value="male"> large (800x600)</td>
+ 			    	<td></td>
+ 			    	<td><input type="radio" name="gender" value="male"> huge (1200x800)</td>
+ 			    </tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<td><input type="checkbox" name="gender" value="male"></td>
+					<td></td>
+					<th>Download data</th>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>	
+					<td><input type="submit" value="Submit" onsubmit="return validateform()"></td>
+				</tr>
+			</table>
+
+
+		</form>
+
+
+	</font>
+	</div>
+</body>
+</html>

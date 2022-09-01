@@ -1,0 +1,146 @@
+html, body {
+	margin: 0;
+  	padding: 0;
+}
+
+Body{
+	background-image: url("bg3.jpeg");
+	background-size: 80%;
+	background-position: 300px 200px;
+	background-repeat: no-repeat;
+}
+.heading{
+	padding: 0px 0px 0px 60px;
+	font-family: Helvetica Neue;
+	color: #2e2e2e;
+}
+.heading h1{
+	font-size: 30px;
+}
+.signup {
+	color: black;
+	float:left;
+	margin: 40px 0px 0px 60px;
+}
+.signup a{
+	text-decoration: none;
+}
+.msg a{
+	color: white;
+}
+.clickhere a:hover{
+	background: #E69B3F;
+	cursor:pointer;
+}
+.clickhere a{
+	text-align: center;
+	padding: 10px 0px;
+	transition: background 0.5s;
+}
+.bar {
+	background-image: url("bar_2.jpg");
+	background-size: 100%;
+	overflow: hidden;
+	padding-left: 30px;
+	background-color: #2e2e2e;
+	
+}
+.bar a{
+  	float: left;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 30px;
+  	text-decoration: none;
+  	font-size: 20px;	
+	display: inline-block;
+	transition: background 0.5s;
+}
+
+
+
+.data{
+	margin-left: 60px;
+	font-family: Helvetica Neue;
+	margin-top: 70px;
+
+	font-size: 25px;
+}
+
+
+
+
+
+.signup button{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+.bar a:hover{
+	background: #2e2e2e;
+	cursor:pointer;
+}
+
+.resizedTextbox{
+	width: 300px; 
+	height: 40px;
+	margin-left: 15px;
+}
+input[id="text1"]
+{
+	padding-left: 10px;
+    font-size:20px;
+}
+td, th{
+	text-align: left;
+}
+h3{
+	color: white;
+	background-color: #d52d2e;
+	border-color: #d52d2e;
+	border-style: solid;
+	border-width: 0px;
+	width: 80px;
+	height: 30px;
+	padding: 10px 0px 5px 15px;
+	transition: background 0.5s;
+}
+h3:hover{
+	background: #2e2e2e;
+	cursor:pointer;
+}
+h2{
+	color: white;
+	font-size: 19px;
+	background-color: #d52d2e;
+	border-color: #d52d2e;
+	border-style: solid;
+	border-width: 0px;
+	width: 190px;
+	height: 30px;
+	padding: 10px 5px 5px 15px;
+	transition: background 0.5s;
+	margin-left: 20px;
+}
+h2:hover{
+	background: #2e2e2e;
+	cursor:pointer;
+}
+
+
+.gallery__img {
+    width: 950px;
+    height: 700px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
